@@ -13,9 +13,14 @@ public class Main {
 
         ramel.loveHate("Jesus");
 
-        System.out.println(clara.findAge(1989));
+        System.out.println(clara.findAge(ramel.yearBorn));
 
-        clara.checkCompatibility("Programmer");
+
+        if(clara.getRace().equals("Puerto Rican")){
+            ramel.setOccupation("Janitor");
+        }
+
+        clara.checkCompatibility(ramel.getOccupation());
     }
 
 

@@ -6,6 +6,18 @@ package com.company;
  */
 public class Ramel {
     String name ="Ramel Henderson";
+    String occupation = "Programmer";
+
+    public String getOccupation(){
+        return occupation;
+    }
+
+    public void setOccupation(String newOccupation){
+        occupation = newOccupation;
+    }
+
+    int yearBorn = 1085;
+
     public String getName(){
         return name;
     }
