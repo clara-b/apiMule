@@ -15,7 +15,10 @@ public class Main {
 
         System.out.println(clara.findAge(1989));
 
+        clara.checkCompatibility("Programmer");
     }
+
+
 
 
 }

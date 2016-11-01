@@ -23,4 +23,19 @@ public class Clara {
     public int findAge(int birthYear){
         return Calendar.getInstance().get(Calendar.YEAR) - birthYear;
     }
+
+
+    public void checkCompatibility(String occupation){
+
+        if (occupation.equals("Programmer")){
+
+            System.out.println("Let's go out!");
+        } else {
+
+            System.out.println("Sorry, not interested.");
+        }
+
+
+
+    }
 }
