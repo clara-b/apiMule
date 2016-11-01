@@ -6,9 +6,10 @@ package com.company;
 public class Clara {
 
     String name = "Clara";
+
     public String getName(){
-
-
         return name;
+
+
     }
 }
