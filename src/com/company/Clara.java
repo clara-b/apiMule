@@ -9,6 +9,10 @@ import java.util.GregorianCalendar;
 public class Clara {
 
     String name = "Clara";
+    String race = "Puerto Rican";
+    public String getRace(){
+        return race;
+    }
 
     public String getName(){
         return name;
