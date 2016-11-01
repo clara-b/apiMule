@@ -13,4 +13,8 @@ public class Ramel {
     public void sayHello (String name){
         System.out.println("Hello " + name);
     }
+
+    public void loveHate(String name){
+        System.out.println("I loveHate " + name);
+    }
 }
