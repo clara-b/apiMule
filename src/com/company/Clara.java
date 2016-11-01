@@ -10,6 +10,10 @@ public class Clara {
     public String getName(){
         return name;
 
+    }
+
+    public void addForYou (int x, int y){
+        System.out.println(x + y);
 
     }
 }
