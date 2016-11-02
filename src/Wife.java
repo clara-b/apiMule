@@ -7,7 +7,7 @@ public class Wife {
     String maidenName;
     String lastName;
     int yearBorn;
-    String
+
 
     public String getFirstName() {
         return firstName;
