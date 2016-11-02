@@ -1,3 +1,5 @@
+package com.company;
+
 /**
  * Created by claraburgos on 11/1/16.
  */
@@ -7,7 +9,17 @@ public class Wife {
     String maidenName;
     String lastName;
     int yearBorn;
+    Husband myHusband;
 
+
+
+    public void setMyHusband(Husband newHusband){
+        myHusband = newHusband;
+        lastName = myHusband.getLastname();
+    }
+    public Husband getHusband(){
+        return myHusband;
+    }
 
     public String getFirstName() {
         return firstName;
