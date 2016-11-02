@@ -7,7 +7,7 @@ package com.company;
 public class Husband {
     static Husband  husband = new Husband();
     String firstname = "Someba";
-    String lastname = "Williams";
+    int lastname = 0;
     int yearborn;
     int wivesCount;
 
@@ -25,12 +25,12 @@ public class Husband {
         this.firstname = firstname;
     }
 
-    public String getLastname() {
+    public int getLastname() {
         return lastname;
     }
 
     public void setLastname(String lastname) {
-        this.lastname = lastname;
+        this.lastname = 0;
     }
 
     public int getYearborn() {
