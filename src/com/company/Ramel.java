@@ -5,28 +5,28 @@ package com.company;
  * on 11/1/2016.
  */
 public class Ramel {
-    String name ="Ramel Henderson";
+    String name = "Ramel Henderson";
     String occupation = "Programmer";
 
-    public String getOccupation(){
+    public String getOccupation() {
         return occupation;
     }
 
-    public void setOccupation(String newOccupation){
+    public void setOccupation(String newOccupation) {
         occupation = newOccupation;
     }
 
     int yearBorn = 1085;
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public void sayHello (String name){
+    public void sayHello(String name) {
         System.out.println("Hello " + name);
     }
 
-    public void loveHate(String name){
+    public void loveHate(String name) {
         System.out.println("I loveHate " + name);
     }
 }

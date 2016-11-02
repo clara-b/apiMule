@@ -5,7 +5,7 @@ package com.company;
  * on 11/1/2016.
  */
 public class Husband {
-    Husband husband;
+    static Husband  husband = new Husband();
     String firstname = "Someba";
     String lastname = "Williams";
     int yearborn;
@@ -13,7 +13,7 @@ public class Husband {
 
     private Husband(){}
 
-    public Husband getInstance(){
+    public static Husband getInstance(){
         return husband;
     }
 
@@ -21,7 +21,7 @@ public class Husband {
         return firstname;
     }
 
-    public void setFirstname(String firstname){
+    private void setFirstname(String firstname){
         this.firstname = firstname;
     }
 
@@ -41,12 +41,12 @@ public class Husband {
         this.yearborn = yearborn;
     }
 
-    public void getCountOfWives(){
-        System.out.println(wivesCount);
+    public int getCountOfWives(){
+        return wivesCount;
     }
 
     public void setWife(Wife wife){
-        System.out.println(wife.getFirstName() + " is " + firstname + "'s wife.");
+
         wivesCount++;
     }
 }

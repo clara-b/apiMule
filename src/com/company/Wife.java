@@ -3,7 +3,7 @@ package com.company;
 /**
  * Created by claraburgos on 11/1/16.
  */
-public class Wife {
+public  class Wife {
 
     String firstName;
     String maidenName;
@@ -53,4 +53,5 @@ public class Wife {
     public void setYearBorn(int newYearBorn){
         yearBorn = newYearBorn;
     }
+
 }
