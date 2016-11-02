@@ -5,15 +5,23 @@ package com.company;
  * on 11/1/2016.
  */
 public class Husband {
-    String firstname;
-    String lastname;
+    Husband husband;
+    String firstname = "Someba";
+    String lastname = "Williams";
     int yearborn;
+    int wivesCount;
+
+    private Husband(){}
+
+    public Husband getInstance(){
+        return husband;
+    }
 
     public String getFirstname() {
         return firstname;
     }
 
-    public void setFirstname(String firstname) {
+    public void setFirstname(String firstname){
         this.firstname = firstname;
     }
 
@@ -31,5 +39,14 @@ public class Husband {
 
     public void setYearborn(int yearborn) {
         this.yearborn = yearborn;
+    }
+
+    public void getCountOfWives(){
+        System.out.println(wivesCount);
+    }
+
+    public void setWife(Wife wife){
+        System.out.println(wife.getFirstName() + " is " + firstname + "'s wife.");
+        wivesCount++;
     }
 }
