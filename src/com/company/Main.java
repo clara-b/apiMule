@@ -1,9 +1,5 @@
 package com.company;
 
-import com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable;
-
-import java.util.ArrayList;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -55,6 +51,7 @@ public class Main {
 
         System.out.println("This nigga has " + guy.getCountOfWives() + " wives!");
         printWifeInfo(wife3);
+
 
     }
 
