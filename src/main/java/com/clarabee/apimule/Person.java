@@ -4,10 +4,10 @@ package com.clarabee.apimule;
  * Created by claraburgos on 11/15/16.
  */
 public abstract class Person {
-    String firstName;
-    String lastName;
-    String gender;
-    int yearBorn;
+    private String firstName;
+    private String lastName;
+    private String gender;
+    private int yearBorn;
 
 
     //getter for firstName
@@ -37,5 +37,13 @@ public abstract class Person {
 
     //setter for yearBorn
     public void setYearBorn(int yearBorn) { this.yearBorn = yearBorn; }
+
+    public void returns(){
+        System.out.println("Name: " + firstName + lastName);
+        System.out.println("Gender: " + gender);
+        System.out.println("Year of Birth : " + yearBorn;
+
+    }
+
 
 }
