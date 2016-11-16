@@ -41,7 +41,7 @@ public abstract class Person {
     public void printsInfo(){
         System.out.println("Name: " + firstName + lastName);
         System.out.println("Gender: " + gender);
-        System.out.println("Year of Birth : " + yearBorn;
+        System.out.println("Year of Birth : " + yearBorn);
 
     }
 
