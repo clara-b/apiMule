@@ -8,4 +8,26 @@ public abstract class Person {
     String lastName;
     String gender;
     int yearBorn;
+
+
+    //getter for firstName
+    public String getFirstName() {
+        return firstName;
+    }
+
+    //setter for firstName
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    //getter for lastName
+    //setter for lastName
+
+    //getter for gender
+    //setter for gender
+
+    //getter for yearBorn
+    //setter for yearBorn
+
+
 }
