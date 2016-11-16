@@ -33,12 +33,12 @@ public abstract class Person {
     public void setGender(String gender) { this.gender = gender; }
 
     //getter for yearBorn
-    public int getYearBorn(){ return yearBorn; }
+    public int getYearBorn() { return yearBorn; }
 
     //setter for yearBorn
     public void setYearBorn(int yearBorn) { this.yearBorn = yearBorn; }
 
-    public void printsInfo(){
+    public void printsInfo() {
         System.out.println("Name: " + firstName + lastName);
         System.out.println("Gender: " + gender);
         System.out.println("Year of Birth : " + yearBorn);
