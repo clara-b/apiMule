@@ -1,4 +1,4 @@
-package com;
+package com.clarabee.apimule;
 
 /**
  * Created by claraburgos on 11/15/16.
