@@ -6,7 +6,8 @@ package com.clarabee.apimule;
  */
 public class Program {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
     }
+
 }
