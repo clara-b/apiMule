@@ -10,6 +10,7 @@ public class Woman extends Person {
         super.setGender("Female");
         super.setFirstName(firstName);
         super.setLastName(lastName);
+
     }
 
 }
