@@ -1,5 +1,7 @@
 package com.clarabee.apimule;
 
+import java.util.Calendar;
+
 /**
  * Created by claraburgos on 11/15/16.
  */
@@ -39,11 +41,15 @@ public abstract class Person {
     public void setYearBorn(int yearBorn) { this.yearBorn = yearBorn; }
 
     public void printInfo() {
-        System.out.println("Name: " + firstName + lastName);
+        System.out.println("Name: " + firstName + " " + lastName);
         System.out.println("Gender: " + gender);
-        System.out.println("Year of Birth : " + yearBorn);
+        System.out.println("Year of Birth: " + yearBorn);
+
 
     }
 
+    public void showAge(){
+        System.out.println(Calendar.getInstance().get(Calendar.YEAR) - yearBorn);
+    }
 
 }

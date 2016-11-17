@@ -6,7 +6,15 @@ package com.clarabee.apimule;
  */
 public class Program {
 
+    static Woman clara = new Woman(1989, "Clara", "Bee");
+
+
     public static void main(String[] args) {
+
+        clara.showAge();
+        clara.printInfo();
+
+
 
     }
 
