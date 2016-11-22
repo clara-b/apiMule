@@ -8,12 +8,28 @@ package com.clarabee.apimule;
  */
 public class Program {
 
-    static Woman clara = new Woman(1989, "Clara", "Bee");
-
-
+    static Super aSuper = new Super();
+    static Sub aSub = new Sub();
+    static SubSub aSubSub = new SubSub();
+    static Female female = new Female(1989, "Clara", "Bee");
+    static Male male = new Male(1985);
 
     public static void main(String[] args) {
-        // comment
+        aSuper.a();
+
+        aSub.a();
+        aSub.b();
+
+        aSubSub.a();
+        aSubSub.b();
+        aSubSub.c();
+
+        male.showAge(male.getYearBorn());
+        male.urinateStandingUp();
+
+        female.showAge(female.getYearBorn());
+        female.havePeriod();
     }
+
 
 }
