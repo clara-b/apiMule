@@ -13,5 +13,8 @@ public class Male extends Person {
 
     }
 
-
+    @Override
+    public void scream() {
+        System.out.println("Ahhhh!");
+    }
 }

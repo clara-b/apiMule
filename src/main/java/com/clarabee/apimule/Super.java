@@ -7,11 +7,19 @@ public class Super {
     public void a(){
 
     }
+
+    public void sayHello(){
+        System.out.println("SUPER hello");
+    }
 }
 
 class Sub extends Super {
     public void b(){
 
+    }
+
+    public void sayHello(){
+        System.out.println("SUB hello");
     }
 }
 

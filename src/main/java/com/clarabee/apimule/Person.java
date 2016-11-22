@@ -56,4 +56,7 @@ public abstract class Person {
         System.out.println(Calendar.getInstance().get(Calendar.YEAR) - yearBorn);
     }
 
+    public void scream(){
+        System.out.println("Eeeeeeeek!!");
+    }
 }

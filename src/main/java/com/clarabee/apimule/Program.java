@@ -29,6 +29,12 @@ public class Program {
 
         female.showAge(female.getYearBorn());
         female.havePeriod();
+
+        aSuper.sayHello();
+        aSub.sayHello();
+        aSubSub.sayHello();
+        female.scream();
+        male.scream();
     }
 
 
