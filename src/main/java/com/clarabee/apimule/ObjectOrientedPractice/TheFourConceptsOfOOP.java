@@ -15,7 +15,7 @@ package com.clarabee.apimule.ObjectOrientedPractice;
     //TODO: 2- Have the imported method from Vegetarian print out "I don't eat meat".
     //TODO: 3- Have the imported method from Wizardry print out "I cast a spell on you".
 
-    //Inheritance + Override------------------------------------------------------------------------------------
+    //Inheritance + Override----------------------------------------------------------------------------------
     //TODO: 4- Override the prototypeMethod from Encapsulation demo to print out "This method has been overrode".
 
     //Inheritance + Overload------------------------------------------------------------------------------------
