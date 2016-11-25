@@ -13,6 +13,8 @@ public class Program {
     static SubSub aSubSub = new SubSub();
     static Female female = new Female(1989, "Clara", "Bee");
     static Male male = new Male(1985);
+    static Clara clara = new Clara(1989, "Clara", "Bee");
+
 
     public static void main(String[] args) {
         aSuper.a();
@@ -35,6 +37,9 @@ public class Program {
         aSubSub.sayHello();
         female.scream();
         male.scream();
+
+        clara.Study(20);
+
     }
 
 
