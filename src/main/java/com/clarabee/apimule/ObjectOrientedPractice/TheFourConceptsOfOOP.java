@@ -5,55 +5,87 @@ package com.clarabee.apimule.ObjectOrientedPractice;
  * on 11/23/2016.
  */
 
-    //PolyMorphism--------------------------------------------------------------------------------------------------
-    //TODO: 0- Create a class named "Prototype" that extends EncapsulationDemo and implements Vegetarian and Wizardry
-
-    //Encapsulation--------------------------------------------------------------------------------------------------
-    //TODO: 1- Create variables/properties int wizardNumber and String wizardName and properly encapsulate them
-
-    //Interfaces--------------------------------------------------------------------------------------------------
-    //TODO: 2- Have the imported method from Vegetarian print out "I don't eat meat".
-    //TODO: 3- Have the imported method from Wizardry print out "I cast a spell on you".
-
-    //Inheritance + Override----------------------------------------------------------------------------------
-    //TODO: 4- Override the prototypeMethod from Encapsulation demo to print out "This method has been overrode".
-
-    //Inheritance + Overload------------------------------------------------------------------------------------
-    //TODO: 5- Overload the prototypeMethod from EncapsulationDemo to take in a string and display it.
-
-    //Constructor--------------------------------------------------------------------------------------------------
-    //TODO: 6- Create a constructor that sets all properties from its parent class as well as the its own
-
-    //Instantiation--------------------------------------------------------------------------------------------------
-    //TODO: 7- Instantiate the Prototype class you create
-
-    //Print out--------------------------------------------------------------------------------------------------
-    //TODO: FINAL STEP- In the console It should print out:
-    /*----------------------------*
-      I cast a spell on you
-      I don't eat meat
-      This method has been overrode
-      String
-    *-----------------------------*/
 
 
-    //Steps 0-6
-    //Create your class here. Just star it with "class", no need to put public
     /*----------------------------Class Start----------------------------*/
+
+    // step 0
+    class Prototype extends EncapsulationDemo implements PolyMorphismDemo.Vegetarian, InterfaceDemo.Wizardry {
+
+    // step 1
+    int wizardNumber;
+    String wizardName;
+
+    public int getWizardNumber(){
+        return wizardNumber;
+    }
+
+    public int setWizardNumber(int newWizardNumber){
+        wizardNumber = newWizardNumber;
+        return newWizardNumber;
+    }
+
+    public String getWizardName(){
+        return wizardName;
+    }
+
+    public String setWizardName(String newWizardName){
+        wizardName = newWizardName;
+        return newWizardName;
+    }
+
+    // step 6
+    Prototype( String firstname, String lastname, int userId, int wizardNumber, String wizardName){
+        super.setFirstname(firstname);
+        super.setLastname(lastname);
+        super.setUserId(userId);
+        setWizardName(wizardName);
+        setWizardNumber(wizardNumber);
+
+    }
+
+    // step 2
+    public void castSpell() {
+       System.out.println("I cast a spell on you");
+    }
+ // step 3
+    public void eatPlants() {
+       System.out.println("I don't eat meat");
+    }
+
+    // step 4
+    @Override
+    public void prototypeMethod() {System.out.println("This method has been overrode");}
+
+    // step 5
+    public void prototypeMethod(String string){System.out.println(string);}
+
+
+
+}
+
     /*----------------------------Class End------------------------------*/
 
 public class TheFourConceptsOfOOP {
 
     //Step 7
-    //Instantiate your class here (Make sure you've created it first!)
+
     /*----------------------------Instantiation Start----------------------------*/
+
+    static Prototype prototype = new Prototype("Clara", "Bee", 420, 421, "Boom");
+
     /*----------------------------Instantiation End------------------------------*/
 
     /*-----------This is the main method that will run the application------------------*/
     public static void main(String[] args) {
-        //Final step
-        //Run your 4 methods here
+
         /*----------------------------Methods Start----------------------------*/
+        prototype.castSpell();
+        prototype.eatPlants();
+        prototype.prototypeMethod();
+        prototype.prototypeMethod("Tacos");
+
+
         /*----------------------------Methods End------------------------------*/
     }
 }
@@ -118,6 +150,12 @@ class EncapsulationDemo {
     }
 
     public void prototypeMethod(){}
+
+
+
+
+
+
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
@@ -185,7 +223,7 @@ Interfaces -
 */
 class InterfaceDemo {
 
-    //This interface will allow the implementer to do wizardy
+    //This interface will allow the implementer to do wizardry
     static interface Wizardry {
         public void castSpell();
     }
@@ -243,7 +281,6 @@ class PolyMorphismDemo {
     public class Animal {
     }
 
-    ;
 
     //This Deer object is polymorphic because it extends and implements something.
     public class Deer extends Animal implements Vegetarian {
